@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="calculator">
+            <div class="mainbox">
+                <i>K-Logic+ calculator</i>
+                <div class="mainbox-display-part">
+                    <input type="text" id="data" value="">
+                </div>
+                <div class="mainbox-numbers">
+                    <div class="mainbox-numbers-data">
+                        <ul>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 1 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 2 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 3 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 4 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 5 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 6 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 7 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 8 </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 9 </button></li>
+                            <li><button class="mainbox-numbers-op" onclick="sendData(this.innerText)"> + </button></li>
+                            <li><button class="mainbox-numbers-no" onclick="sendData(this.innerText)"> 0 </button></li>
+                            <li><button class="mainbox-numbers-op" onclick="sendData(this.innerText)"> - </button></li>
+                            <li><button class="mainbox-numbers-op" onclick="sendData(this.innerText)"> * </button></li>
+                            <li><button class="mainbox-numbers-op" onclick="sendData(this.innerText)"> / </button></li>
+                            <li><button class="mainbox-numbers-op" onclick="calculate()">=</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mainbox-buttons">
+                    <button onclick="backspace()">Backspace</button>
+                    <button onclick="delData()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="./script.js"></script>
+</body>
+
+</html>
