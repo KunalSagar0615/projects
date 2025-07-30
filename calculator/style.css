@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.calculator {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    box-shadow: 0px 0px 4px gray;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.mainbox-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.mainbox-display-part input {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border: none;
+}
+
+.mainbox-numbers-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox-numbers-data ul {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.mainbox-numbers-operators ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mainbox-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.mainbox-buttons button {
+    flex: 1;
+}
+
+.mainbox-numbers-op {
+    background-color: #ff9500;
+    color: #ffffff;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.mainbox-numbers-no {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.mainbox-buttons button {
+    background-color: #a5a5a5;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+i {
+    font-size: 15px;
+    color: #ffffff;
+}
